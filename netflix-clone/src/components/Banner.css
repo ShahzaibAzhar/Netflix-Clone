@@ -1,13 +1,12 @@
 .banner {
   color: white;
-  object-fit: contain;
-  height: 448px;
+  height: 60%;
 }
 
 .banner__contents {
   margin-left: 30px;
-  padding-top: 140px;
-  height: 190px;
+  padding-top: 340px;
+  height: 90px;
 }
 
 .banner__title {
@@ -36,8 +35,14 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-right: 1rem;
-  background-color: rgba(51, 51, 51, 0.5);
+  background-color: rgba(120, 120, 120, 0.5);
 }
+
+.banner__button__play {
+  color: black;
+  background-color: white;
+}
+
 .banner__button:hover {
   color: black;
   background-color: #e6e6e6;
@@ -45,7 +50,7 @@
 }
 
 .banner--fadeBottoms {
-  height: 5.9rem;
+  height: 470px;
   background-image: linear-gradient(
     180deg,
     transparent,

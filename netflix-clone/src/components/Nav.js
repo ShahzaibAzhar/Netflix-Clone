@@ -27,6 +27,12 @@ function Nav() {
         src="https://occ-0-1241-58.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABSUh5vTXaNW1xUVnK-poES8g1_JY-i91igMvNwDyQANKvlNfhGpcibSZA-Y8QqnOOXWqeT7ST5pYDvPMqrIvrrY.png?r=8aa"
         alt="Netflix Logo"
       />
+
+      {/* <img
+        className="nav__bell"
+        src="https://library.kissclipart.com/20201117/sve/kissclipart-social-network-icon-bell-icon-notification-icon-d35bdc386de6e2cb.png"
+        alt="Netflix Logo"
+      /> */}
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import axios from "./axios";
 import requests from "./requests";
 import "./Banner.css";
 
 function Banner() {
-  const { movie, setMovie } = useState([]);
+  const [movie, setMovie] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -14,9 +14,11 @@ function Banner() {
           Math.floor(Math.random() * request.data.results.length - 1)
         ]
       );
+
       return request;
     }
     fetchData();
+    // eslint-disable-next-line
   }, []);
 
   console.log(movie);
@@ -30,11 +32,12 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
         backgroundImage: `url(
-                "https://image.tmdb.org/t/p/original/${movie?.backdrop_path}"
+          "https://image.tmdb.org/t/p/original/${movie?.backdrop_path}"
             )`,
-        /*"https://th.bing.com/th/id/OIP.tAFVssi20qOQpUKoBPLLuwHaDb?pid=ImgDet&rs=1"*/
-        backgroundPosition: "center center",
+        //"https://th.bing.com/th/id/OIP.tAFVssi20qOQpUKoBPLLuwHaDb?pid=ImgDet&rs=1"
+        backgroundPosition: "top center",
       }}
     >
       <div className="banner__contents">
@@ -46,8 +49,8 @@ function Banner() {
         </h1>
 
         <div className="banner__buttons">
-          <button className="banner__button">Play</button>
-          <button className="banner__button">My List</button>
+          <button className="banner__button banner__button__play">Play</button>
+          <button className="banner__button ">My List</button>
         </div>
 
         <h1 className="banner__description">

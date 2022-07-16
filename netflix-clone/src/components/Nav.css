@@ -17,6 +17,15 @@
   background-color: #111;
 }
 
+.nav__bell {
+  position: fixed;
+  height: 24px;
+  width: 24px;
+  margin-top: 4px;
+  right: 70px;
+  width: 30px;
+  object-fit: contain;
+}
 .nav__logo {
   position: fixed;
   left: 20px;
